@@ -1,4 +1,4 @@
-package com.revature.Game;
+package com.revature;
 
 import java.util.*;
 
@@ -39,9 +39,8 @@ public class Game
             }
         }//end gameplay loop
     }//end main
-}//end Game class
 
-    public static ArrayList<ArrayList<Room>> instantiateRooms(Arrays.asList({null, null, null, null, null, null}))
+    public static ArrayList<ArrayList<Room>> instantiateRooms(Arrays<Room>.asList({null, null, null, null, null, null}))
     {
         ArrayList<ArrayList<Room>> rooms = new ArrayList<ArrayList<Room>>(6);//set up multidimensional arraylist to store rooms
                                                             //first coordinite gives position from west to east
@@ -231,3 +230,4 @@ public class Game
         return rooms;
     }
 
+}//end Game class

@@ -1,4 +1,4 @@
-package com.revature.Game;
+package com.revature;
 
 public class Room
 {

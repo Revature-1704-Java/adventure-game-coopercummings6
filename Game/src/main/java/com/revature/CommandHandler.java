@@ -1,6 +1,4 @@
-package com.revature.Game;
-
-import java.util.Arrays;
+package com.revature;
 
 public class CommandHandler
 {
