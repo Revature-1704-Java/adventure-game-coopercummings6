@@ -40,14 +40,15 @@ public class Game
         }//end gameplay loop
     }//end main
 
-    public static ArrayList<ArrayList<Room>> instantiateRooms(Arrays<Room>.asList({null, null, null, null, null, null}))
+    public static ArrayList<ArrayList<Room>> instantiateRooms()
     {
-        ArrayList<ArrayList<Room>> rooms = new ArrayList<ArrayList<Room>>(6);//set up multidimensional arraylist to store rooms
+        List<Room> sixRooms = Arrays.asList(new Room[]{null, null, null, null, null, null});
+        ArrayList<ArrayList<Room>> rooms = new ArrayList(sixRooms);//set up multidimensional arraylist to store rooms
                                                             //first coordinite gives position from west to east
                                                             //second coordinate gives position from north to south.  ((0,0) is northwest most room)
         for(int i = 0; i < 6; i++)
         {
-            rooms.set(i, (new ArrayList<Room>(Arrays.asList({null, null, null, null, null, null})))); 
+            rooms.set(i, (new ArrayList<Room>(sixRooms))); 
         }
                                                     //set first row of rooms
         (rooms.get(0)).set(0, null);        //set room at 0,0 to null

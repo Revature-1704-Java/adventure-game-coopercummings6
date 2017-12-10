@@ -53,12 +53,12 @@ Rooms:
 Requirements:
 
 Implement (interface, polymorphism)
-set up as maven project (junit)
-packages
-file io (optional)
-git
-use collections/map
-design patterns (optional)
+set up as maven project (junit)     currently using maven
+packages                            done
+file io (optional)                  optional
+git                                  using git
+use collections/map                  done
+design patterns (optional)           optional below
 	-singleton
 	-factories
 	-DAO
