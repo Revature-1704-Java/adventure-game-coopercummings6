@@ -1,6 +1,6 @@
 package com.revature;
 
-public class CommandHandler
+public class CommandHandler implements HandlesCommands
 {
     public Room nextRoom(String command, Room currentRoom)//This will return the neighboring room in the direction specified by the provided valid command, if one exists, if not it returns null
     {
@@ -10,7 +10,7 @@ public class CommandHandler
             {
                 System.out.println("You can't go that way");
             }
-            return currentRoom.getNorthNeighbor();//null if no room to the north, otherwisw reference to the room
+            return ((Room)currentRoom.getNorthNeighbor());//null if no room to the north, otherwisw reference to the room
         }
         if(command.equals("South"))//rest of the directions are duplicates of the logic from above
         {
@@ -18,7 +18,7 @@ public class CommandHandler
             {
                 System.out.println("You can't go that way");
             }
-            return currentRoom.getSouthNeighbor();
+            return ((Room)currentRoom.getSouthNeighbor());
         }
         if(command.equals("East"))
         {
@@ -26,7 +26,7 @@ public class CommandHandler
             {
                 System.out.println("You can't go that way");
             }
-            return currentRoom.getEastNeighbor();
+            return ((Room)currentRoom.getEastNeighbor());
         }
         if(command.equals("West"))
         {
@@ -34,7 +34,7 @@ public class CommandHandler
             {
                 System.out.println("You can't go that way");
             }
-            return currentRoom.getWestNeighbor();
+            return ((Room)currentRoom.getWestNeighbor());
         }
         return null;//shouldn't execute, all commands that get through parser will fit an if statement
     }

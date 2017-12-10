@@ -52,7 +52,7 @@ Rooms:
 
 Requirements:
 
-Implement (interface, polymorphism)
+Implement (interface, polymorphism) some polymorphism used to initialize the arrayLists,
 set up as maven project (junit)     currently using maven
 packages                            done
 file io (optional)                  optional

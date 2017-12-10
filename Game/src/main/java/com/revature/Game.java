@@ -43,6 +43,10 @@ public class Game
     public static ArrayList<ArrayList<Room>> instantiateRooms()
     {
         List<Room> sixRooms = Arrays.asList(new Room[]{null, null, null, null, null, null});
+        //If arraylist is empty, there will be issues later when the program attempts to fill specific indexes.
+        //In order to ensure that values can be assigned to specific indexes, the values will be initialized to null.
+        //This sixRooms list allows the Arraylist to be initialized to null in the constructor, as Arraylist has an ArrayList(Collection<> c)
+        //constructor that fills the Arraylist with values in the collection.
         ArrayList<ArrayList<Room>> rooms = new ArrayList(sixRooms);//set up multidimensional arraylist to store rooms
                                                             //first coordinite gives position from west to east
                                                             //second coordinate gives position from north to south.  ((0,0) is northwest most room)

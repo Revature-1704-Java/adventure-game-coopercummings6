@@ -2,7 +2,7 @@ package com.revature;
 
 import java.util.Scanner;
 
-public class Parser
+public class Parser implements ParsesInputs
 {
     public String getCommand()//prompts user for a direction to travel and returns a string containing the direction
     {   

@@ -1,12 +1,12 @@
 package com.revature;
 
-public class Room
+public class Room implements Location
 {
 	private String description;
-	private Room NorthNeighbor = null;
-	private Room SouthNeighbor = null;
-	private Room EastNeighbor = null;
-	private Room WestNeighbor = null;
+	private Location NorthNeighbor = null;
+	private Location SouthNeighbor = null;
+	private Location EastNeighbor = null;
+	private Location WestNeighbor = null;
 	private boolean hasExit;
 	private boolean hasGrue;
 
@@ -37,14 +37,14 @@ public class Room
 	}
 
 	//setters for neighbors
-	public void setNorthNeighbor(Room newNeighbor){NorthNeighbor = newNeighbor;}
-	public void setSouthNeighbor(Room newNeighbor){SouthNeighbor = newNeighbor;}
-	public void setEastNeighbor(Room newNeighbor){EastNeighbor = newNeighbor;}
-	public void setWestNeighbor(Room newNeighbor){WestNeighbor = newNeighbor;}
+	public void setNorthNeighbor(Location newNeighbor){NorthNeighbor = newNeighbor;}
+	public void setSouthNeighbor(Location newNeighbor){SouthNeighbor = newNeighbor;}
+	public void setEastNeighbor(Location newNeighbor){EastNeighbor = newNeighbor;}
+	public void setWestNeighbor(Location newNeighbor){WestNeighbor = newNeighbor;}
 
 	//getters for neighbors, might return null if there is no neighbor
-	public Room getNorthNeighbor(){return NorthNeighbor;}
-	public Room getSouthNeighbor(){return SouthNeighbor;}
-	public Room getEastNeighbor(){return EastNeighbor;}
-	public Room getWestNeighbor(){return WestNeighbor;}
+	public Location getNorthNeighbor(){return NorthNeighbor;}
+	public Location getSouthNeighbor(){return SouthNeighbor;}
+	public Location getEastNeighbor(){return EastNeighbor;}
+	public Location getWestNeighbor(){return WestNeighbor;}
 }
